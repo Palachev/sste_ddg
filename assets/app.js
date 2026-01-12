@@ -1,7 +1,7 @@
 const body = document.body;
-window.addEventListener("load", () => {
-  body.classList.add("loaded");
-});
+const reveal = () => body.classList.add("loaded");
+document.addEventListener("DOMContentLoaded", reveal);
+window.addEventListener("load", reveal);
 
 document.querySelectorAll(".faq-item").forEach((item) => {
   item.addEventListener("click", () => {
